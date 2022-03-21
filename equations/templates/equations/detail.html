@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><h1>ChemCam</h1></title>
+  </head>
+  <body>
+    <h1>{{ question.question_text }}</h1>
+    <ul>
+    {% for solution in question.solution_set.all %}
+        <li>{{ solution.solution_text }}</li>
+    {% endfor %}
+    </ul>
+    </body>
+</html>
